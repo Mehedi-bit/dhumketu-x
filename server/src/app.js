@@ -5,9 +5,14 @@ const morgan = require('morgan');
 
 const api= require('./routes/api')
 
+const corsOption = {
+    origin: ['http://localhost:3000', 'https://dhumketux.onrender.com'],
+};
+
 const app = express();
 
-app.use(cors({origin: 'https://dhumketux.onrender.com/'}));
+// app.use(cors({origin: 'https://dhumketux.onrender.com/'}));
+app.use(cors(corsOption));
 app.use(morgan('combined'));
 
 app.use(express.json());
