@@ -7,7 +7,7 @@ const api= require('./routes/api')
 
 const app = express();
 
-app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: 'https://dhumketux.onrender.com/'}));
 app.use(morgan('combined'));
 
 app.use(express.json());
