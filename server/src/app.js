@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const api= require('./routes/api')
 
 const corsOption = {
-    origin: ['http://localhost:3000', 'https://dhumketux.onrender.com'],
+    origin: ['http://localhost:3000', 'https://dhumketux.onrender.com/'],
 };
 
 const app = express();
