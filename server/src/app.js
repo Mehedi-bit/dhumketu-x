@@ -5,15 +5,10 @@ const morgan = require('morgan');
 
 const api= require('./routes/api')
 
-// const corsOption = {
-//     origin: ['https://dhumketux.onrender.com/'],
-// };
 
 const app = express();
 
-// app.use(cors(corsOption));
 app.use(morgan('combined'));
-
 app.use(express.json());
 // app.use(express.static(path.join(__dirname, '..', 'public')));
 
